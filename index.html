@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Totally Trivial Trivia!</title>
+		<script> src="https://code.jquery.com/jquery-3.1.1.js"
+	 			integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  			crossorigin="anonymous"
+	 	 </script>
+
+	  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<h1> Totally Trivial Trivia! </h1>
+
+	<h2> Time Remaining: </h2>
+	<h2 id="timer"> </h2>
+
+<!-- Quiz -->
+			<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+			<div class="question">Whats 1+1?</div>
+			<input id="answer" type="radio" name="group1" value="wrong"> 1 <br>
+			<input id="answer" type="radio" name="group1" value="wrong"> 2 <br>
+			<input id="answer" type="radio" name="group1" value="correct"> 3 <hr>
+
+			<div class="question">Whats 2+3?</div>
+			<input id="answer" type="radio" name="group2" value="wrong">3<br>
+			<input id="answer" type="radio" name="group2" value="wrong">4<br>
+			<input id="answer" type="radio" name="group2" value="correct">5<hr>
+
+			<div class="question">Whats 6x6?</div>
+			<input id="answer" type="radio" name="group3" value="wrong">12<br>
+			<input id="answer" type="radio" name="group3" value="wrong"> 24<br>
+			<input id="answer" type="radio" name="group3" value="correct" >36<hr>
+
+			<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+			</form>
+
+
+
+	
+</body>
+</html>
