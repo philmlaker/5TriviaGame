@@ -9,37 +9,109 @@
 	 	 </script>
 
 	  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fredoka+One|Jura|Permanent+Marker" rel="stylesheet">
+
 </head>
 <body>
 	<h1> Totally Trivial Trivia! </h1>
 
-	<h2> Time Remaining: </h2>
-	<div id="timer_div"> </div>
-	</br>
+	<div style = "clear: both">
+		<h2 style="float: right"  id="timer_div"> -- </h2>
+
+		<h2 style="float: right" id="timeRemain"> Time Remaining: </h2>
+
+		
+	</div>
 
 <!-- Quiz -->
-			<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+			<form style = "clear: both" name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
 
-			<div class="question">Whats 1+1?</div>
-			<input id="answer" type="radio" name="group1" value="wrong"> 1 <br>
-			<input id="answer" type="radio" name="group1" value="wrong"> 2 <br>
-			<input id="answer" type="radio" name="group1" value="correct"> 3 <hr>
+			<div class="question">1. What is the world's longest river?</div>
+			<input id="answer" type="radio" name="group1" value="wrong"> Nile River <br>
+			<input id="answer" type="radio" name="group1" value="wrong"> Mississippi River <br>
+			<input id="answer" type="radio" name="group1" value="correct"> Amazon River <br>
+			<input id="answer" type="radio" name="group1" value="wrong"> Rio Grande <hr>
 
-			<div class="question">Whats 2+3?</div>
-			<input id="answer" type="radio" name="group2" value="wrong">3<br>
+			<div class="question">2. How many values does a trumpet have?</div>
+			<input id="answer" type="radio" name="group2" value="wrong">2<br>
 			<input id="answer" type="radio" name="group2" value="wrong">4<br>
-			<input id="answer" type="radio" name="group2" value="correct">5<hr>
+			<input id="answer" type="radio" name="group2" value="wrong">5
+			<br>
+			<input id="answer" type="radio" name="group2" value="correct">3
+			<hr>
 
-			<div class="question">Whats 6x6?</div>
-			<input id="answer" type="radio" name="group3" value="wrong">12<br>
-			<input id="answer" type="radio" name="group3" value="wrong"> 24<br>
-			<input id="answer" type="radio" name="group3" value="correct" >36<hr>
+			<div class="question">3. When did the cold war end?</div>
+			<input id="answer" type="radio" name="group3" value="wrong">1980<br>
+			<input id="answer" type="radio" name="group3" value="wrong">1982<br>
+			<input id="answer" type="radio" name="group3" value="correct">1989<br>
+			<input id="answer" type="radio" name="group3" value="correct">1987
+			<hr>
 
-			<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+			 <div class="question">4. What flavor is Cointreau? </div>
+			<input id="answer" type="radio" name="group4" value="correct">orange<br>
+			<input id="answer" type="radio" name="group4" value="wrong">lemon<br>
+			<input id="answer" type="radio" name="group4" value="wrong" >grape<br>
+			<input id="answer" type="radio" name="group4" value="wrong" >licorice
+			<hr>
+
+			<div class="question">5. What is the longest mountain range on the surface of the earth (above sea level)? </div>
+			<input id="answer" type="radio" name="group5" value="wrong">Rocky Mountains<br>
+			<input id="answer" type="radio" name="group5" value="wrong">Himalayas<br>
+			<input id="answer" type="radio" name="group5" value="correct" >Andes<br>
+			<input id="answer" type="radio" name="group5" value="wrong" >Transantarctic Mountains
+			<hr>
+
+		
+			<div class="question">6. What name is given to the generation of people born in the USA between 1946 and 1964?</div>
+			<input id="answer" type="radio" name="group6" value="correct">Baby Boomers<br>
+			<input id="answer" type="radio" name="group6" value="wrong">Millennials<br>
+			<input id="answer" type="radio" name="group6" value="wrong" >Generation X<br>
+			<input id="answer" type="radio" name="group6" value="wrong" >Generation Z
+			<hr>
+
+
+			<div class="question">7. Who painted The Water Lily Pool?</div>
+			<input id="answer" type="radio" name="group7" value="wrong">Picasso<br>
+			<input id="answer" type="radio" name="group7" value="correct">Claude Monet<br>
+			<input id="answer" type="radio" name="group7" value="wrong" >Leonardo da Vinci<br>
+			<input id="answer" type="radio" name="group7" value="wrong" >Vincent Van Gogh
+			<hr>
+
+
+			<div class="question">8. What was the first James Bond book?</div>
+			<input id="answer" type="radio" name="group8" value="correct">Casino Royal<br>
+			<input id="answer" type="radio" name="group8" value="wrong">Dr. No<br>
+			<input id="answer" type="radio" name="group8" value="wrong" >Live and Let Die<br>
+			<input id="answer" type="radio" name="group8" value="wrong" >Goldfinger
+			<hr>
+
+			<div class="question">9. Ageusia is the loss of which sense?</div>
+			<input id="answer" type="radio" name="group9" value="wrong">Smell<br>
+			<input id="answer" type="radio" name="group9" value="wrong">Touch<br>
+			<input id="answer" type="radio" name="group9" value="wrong" >Hearing<br>
+			<input id="answer" type="radio" name="group9" value="correct" >Taste
+			<hr>
+
+			<div class="question">10. Who did the USA buy the Virgin islands from?</div>
+			<input id="answer" type="radio" name="group10" value="wrong">Spain<br>
+			<input id="answer" type="radio" name="group10" value="correct">Denmark<br>
+			<input id="answer" type="radio" name="group10" value="wrong" >France<br>
+			<input id="answer" type="radio" name="group10" value="wrong" >England
+			<hr>
+
+
+			<button class="submit" onclick="return handleClick();" type="submit">submit</button>
 
 			</form>
 
-
+</br>
+</br>
+<div id="score"></div>
+</br>
+</br>
 
 	
 </body>
