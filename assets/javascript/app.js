@@ -3,6 +3,7 @@
 var seconds_left = 100;
 var interval = setInterval(function() {
     document.getElementById('timer_div').innerHTML = --seconds_left;
+    document.getElementById('timer_div').style.color= "white";
 
     if (seconds_left <= 0)
     {
@@ -27,6 +28,7 @@ var totalQuestions = 10;
 		        var b = parseInt(totalQuestions);
 		        console.log("Incorrect Responses: " + (b-a) + " out of " + totalQuestions);
 		        document.getElementById('score').innerHTML = ("Correct Responses: " + amountCorrect + " out of " + totalQuestions);
+		        document.getElementById('score').style.color= "red";
 		    		}
 
 
